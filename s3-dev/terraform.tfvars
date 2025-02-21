@@ -1,4 +1,4 @@
-bucket_name        = "never-mind-the-weather"
+bucket_name        = "better-days-ahead"
 lifecycle_days     = 90
 bucket_prefix      = "my-bucket-prefix"
 versioning         = true
