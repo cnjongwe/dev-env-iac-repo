@@ -33,6 +33,7 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./s3-dev
 
       - name: Terraform Plan
         run: terraform plan
