@@ -16,7 +16,7 @@ jobs:
   terraform:
     name: Terraform Plan and Apply
     runs-on: ubuntu-latest
-    working-directory: s3-dev
+
 
     steps:
       - name: Checkout code
@@ -36,6 +36,7 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
+        working-directory: ./s3-dev
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
